@@ -1,0 +1,17 @@
+#HOsamaAdem
+a=int(input())
+b=int(input())
+c=int(input())
+list=[]
+j=a+b*c
+list.append(j)
+k=a*(b+c)
+list.append(k)
+h=a*b*c
+list.append(h)
+m=(a+b)*c
+list.append(m)
+f=a+b+c
+list.append(f)
+
+print(max(list))
