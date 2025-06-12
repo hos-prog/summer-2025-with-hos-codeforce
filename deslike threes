@@ -1,0 +1,18 @@
+#HosamaAdem
+t=int(input())
+
+list1=[]#creating alist
+k=[int(input()) for i in range(t)]
+ks=max(k)
+n=1
+
+while len(list1)<ks:
+    if n % 3 != 0 and n % 10 != 3:
+        list1.append(n)
+    n+=1
+
+
+
+for i in k:
+    print(list1[i-1])
+
