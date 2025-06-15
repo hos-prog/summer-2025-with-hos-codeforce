@@ -1,0 +1,16 @@
+#HosamaAdem
+t=int(input())
+
+for i in range(t):
+    f=int(input())
+    k=input()
+
+    su=set()
+    cu=0
+    for i in k:
+        if i in su:
+            cu+=1
+        else:
+            cu+=2
+            su.add(i)
+    print(cu)
