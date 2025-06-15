@@ -1,0 +1,8 @@
+#HOsama Adem
+t=int(input())
+for i in range(t):
+    k=input()
+    l=len(k)
+    d=int(k[0])
+    ans=int((d-1)*10+((l*(l+1))/2))
+    print(ans)
