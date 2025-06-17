@@ -1,0 +1,27 @@
+#Hosama Adem
+
+t=int(input())
+
+for _ in range(t):
+    n=int(input())
+    k=input()
+    m=input()
+    count=0
+
+    for i in range(n):
+        if (k[i]=="G" or k[i]=="B") and (m[i]=="G" or m[i]=="B"):
+            count+=1
+        elif k[i]=="R" and m[i]=="R":
+            count+=1
+
+    if count==n:
+        print("YES")
+    else:
+        print("NO")
+
+
+
+
+
+
+
