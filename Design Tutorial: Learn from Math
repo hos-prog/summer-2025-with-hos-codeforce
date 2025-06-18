@@ -1,0 +1,18 @@
+#HosamaAdem
+
+n=int(input())
+
+def composite_number(n):
+    for i in range(2,n):
+        if n%i==0:
+            return True
+
+    return False
+
+for j in range(n):
+    m=n-j
+    if composite_number(m) and composite_number(j):
+        print(j,m)
+        break
+
+
