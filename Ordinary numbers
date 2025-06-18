@@ -1,0 +1,33 @@
+#HosamaAdem
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    ord_num = 0
+
+
+    for d in range(1, 10):
+        num = str(d)
+        while int(num) <= n:
+            if len(set(num)) == 1:
+                ord_num += 1
+            num += str(d)
+
+    print(ord_num)
+'''
+#HosamaAdem
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    ord_num = 0
+
+
+    for d in range(1, 10):
+        num = str(d)
+        while int(num) <= n:
+            if len(set(num)) == 1:
+                ord_num += 1
+            num += str(d)
+
+    print(ord_num)
+this code also write but the time complexity get me wrong
+'''
