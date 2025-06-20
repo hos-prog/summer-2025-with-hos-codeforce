@@ -1,0 +1,36 @@
+#HosamaAdem
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    one=[]
+    two=[]
+    three=[]
+    four=[]
+    five=[]
+    for i in range(1,n):
+        if n%i==1:
+            one.append(i)
+            if len(one)==2:
+                print(one[0],one[1])
+                break
+        elif n%i==2:
+            two.append(i)
+            if len(two)==2:
+                print(two[0],two[1])
+                break
+        elif n%i==3:
+            three.append(i)
+            if len(three)==2:
+                print(three[0],three[1])
+                break
+        elif n%i==4:
+            four.append(i)
+            if len(four)==2:
+                print(four[0],four[1])
+                break
+        elif n%i==5:
+            five.append(i)
+            if len(five)==2:
+                print(five[0],five[1])
+                break
+
