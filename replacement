@@ -1,0 +1,13 @@
+#HosamaAdem
+t=int(input())
+k=list(map(int,input().split()))
+m=[]
+for i in range (t):
+    if k[i]>0:
+        m.append(1)
+    elif k[i]<0:
+        m.append(2)
+    else:
+        m.append(0)
+for i in m:
+    print(i,end=" ")
