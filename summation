@@ -1,0 +1,11 @@
+#HosamaAdem
+n=int(input())
+k=list(map(int,input().split()))
+summ=0
+for i in k:
+    summ+=i
+if summ<0:
+    print(-1*summ)
+else:
+    print(summ)
+
