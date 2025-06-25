@@ -1,0 +1,8 @@
+#HosamaAdem
+t=int(input())
+k=list(map(int,input().split()))
+minimum=min(k)
+for i in range(t):
+    if k[i]==minimum:
+        print(minimum,i+1)
+        break
