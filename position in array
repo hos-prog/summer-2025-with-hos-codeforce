@@ -1,0 +1,7 @@
+#HosamaAdem
+t=int(input())
+k=list(map(int,input().split()))
+for i in range(t):
+    if k[i]<=10:
+        print(f"A[{i}] = {k[i]}")
+
