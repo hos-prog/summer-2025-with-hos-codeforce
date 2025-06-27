@@ -1,0 +1,33 @@
+t=input()
+n=input()
+str1=""
+str2=""
+
+for I  in t:
+    if I !="0":
+        str1+=I
+ 
+for I in n:
+    if I !="0":
+        str2+=I
+        
+n1=int(str1)+int(str2)
+num=int(t)+int(n)
+str3=str(num)
+str4=""
+
+for I in str3:
+    if I !="0":
+        str4+=I
+
+n2=int(str4)
+
+if n1==n2:
+    print("YES")
+else:
+    print("NO")    
+        
+    
+         
+        
+
