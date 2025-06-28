@@ -1,0 +1,6 @@
+#HosamaAdem
+t = int(input())
+k = list(map(int, input().split()))
+print(min(map(abs,k)))
+                
+    
