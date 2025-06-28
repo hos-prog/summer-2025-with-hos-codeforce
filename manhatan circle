@@ -1,0 +1,25 @@
+#HosamaAdem
+t = int(input())
+for _ in range(t):
+    n, m = map(int, input().split())
+    #I use list comprehension 
+    g = [input().strip() for _ in range(n)]
+    mi, ma = n+1, -1
+    mic, mac= m+1, -1
+    
+    for i in range(n):
+        for j in range(m):
+            if g[i][j] == '#':
+                mi = min(mi, i)
+                ma = max(ma, i)
+                mic = min(mic, j)
+                mac= max(mac, j)
+    
+    c_row = (mi + ma)//2 + 1 
+    c_col = (mic + mac)//2 + 1
+    print(c_row, c_col)
+        
+    
+                
+    
+
