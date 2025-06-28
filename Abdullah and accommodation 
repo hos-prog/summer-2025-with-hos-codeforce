@@ -1,0 +1,13 @@
+#HosamaAdem
+n=int(input())
+free=0
+for _ in range(n):
+    pi,qi=map(int,input().split())
+    if qi-pi>=2:
+        free+=1
+print(free)        
+        
+        
+    
+                
+    
