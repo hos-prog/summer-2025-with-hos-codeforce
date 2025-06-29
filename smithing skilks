@@ -1,0 +1,10 @@
+#HosamaAdem
+t = int(input())
+count=0
+for I in range(t):
+    m=list(map(int,input().split()))
+    if sum(m)>=2:
+        count+=1
+print(count)    
+
+    
