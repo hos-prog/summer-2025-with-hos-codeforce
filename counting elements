@@ -1,0 +1,12 @@
+#Hosama Adem 
+t=int(input())
+a=list(map(int,input().split()))
+
+count=0
+for I in a:
+    if I+1 in a:
+        count+=1
+        
+print(count)       
+        
+    
