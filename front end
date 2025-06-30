@@ -1,0 +1,19 @@
+#Hosama Adem 
+t=int(input())
+a=list(map(int,input().split()))
+
+new=[]
+I,j=0,t-1
+while len(new)<t:
+    if len(new)<t:
+        new.append(a[I])
+        I+=1
+    if len(new)<t:
+        new.append(a[j])
+        j-=1
+
+
+        
+for I in new:
+    print(I,end=" ")                
+    
