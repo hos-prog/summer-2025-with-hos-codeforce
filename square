@@ -1,0 +1,13 @@
+#Hosama Adem
+t=int(input())
+for _ in range(t):
+    xa,ya=map(int,input().split())
+    xb,yb=map(int,input().split())
+    xc,yc=map(int,input().split())
+    xd,yd=map(int,input().split())
+    if xa!=xb:
+        length=abs(xa-xb)
+    else:
+        length=abs(ya-yb)    
+    print(length**2)
+    
