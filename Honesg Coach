@@ -1,0 +1,12 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    k=list(map(int,input().split()))
+    m=sorted(k)
+    diff=[]
+    for i in range(n):
+        if i!=n-1:
+            ne=i+1
+            v=m[ne]-m[i]
+            diff.append(v)
+    print(min(diff))        
