@@ -1,0 +1,19 @@
+#HosamaAdem 
+n=int(input())
+a = list(map(int, input().split()))
+count1 = 0
+count2 = 0
+
+for i in range(n):
+    if i % 2 == 0 and a[i] < 0:
+        count1 += 1
+    elif i % 2 == 1 and a[i] > 0:
+        count1 += 1
+
+for i in range(n):
+    if i % 2 == 0 and a[i] > 0:
+        count2 += 1
+    elif i % 2 == 1 and a[i] < 0:
+        count2 += 1
+
+print(min(count1, count2))      
