@@ -1,0 +1,24 @@
+n=int(input())
+k=list(map(int,input().split()))
+list1=[]
+list2=[]
+list3=[]
+
+if 3 not in k or 2 not in k or 1 not in k:
+    print(0)
+else:
+    for I in range(len(k)):
+        if k[I]==1:
+            list1.append(I+1)
+        elif k[I]==2:
+            list2.append(I+1)
+        elif k[I]==3:
+            list3.append(I+1) 
+                   
+            
+    length=min(len(list1),len(list2),len(list3))
+    print(length)
+    for I in range(length):
+        print(list1[I],list2[I],list3[I])
+        
+        
