@@ -1,0 +1,4 @@
+t = int(input())
+a=list(map(int,input().split()))
+summation=sum(a)
+print(summation/t)
