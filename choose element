@@ -1,0 +1,14 @@
+#hos
+n, k = map(int, input().split())
+li = list(map(int, input().split()))
+
+if k == 0:
+    print(0)
+else:
+    li.sort(reverse=True)
+    max_sum = 0  
+    current_sum = 0
+    for i in range(min(k, n)):
+        current_sum += li[i]
+        max_sum = max(max_sum, current_sum)
+    print(max_sum)
