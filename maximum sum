@@ -1,0 +1,17 @@
+#hos
+t = int(input())
+for _ in range(t):
+    n, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    a.sort()
+    pre = [0] * (n + 1)
+    for i in range(n):
+        pre[i + 1] = pre[i] + a[i]
+    ans = 0
+    for i in range(k + 1):
+        if 2 * i > n or (k - i) > n:
+            continue
+        s = pre[2 * i] + (pre[n] - pre[n - (k - i)])
+        ans = max(ans, pre[n] - s)
+    print(ans)   
+ 
