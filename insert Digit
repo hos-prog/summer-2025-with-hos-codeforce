@@ -1,0 +1,11 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n,d=map(int,input().split())
+    s=input()
+    for i in range(n):
+        if d>int(s[i]):
+            print(s[:i]+str(d)+s[i:])
+            break
+    else:
+        print(s+str(d))        
