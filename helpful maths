@@ -1,0 +1,15 @@
+#hos
+numbers=[]
+s=input()
+new=""
+for I in s:
+    if I!="+":
+        numbers.append(int(I))
+numbers.sort()
+for I in range(len(numbers)):
+    if I!=len(numbers)-1:
+        new+=str(numbers[I])
+        new+="+"
+    else:
+        new+=str(numbers[I])
+print(new)            
