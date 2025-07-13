@@ -1,0 +1,10 @@
+#hos
+t=int(input())
+m="codeforces"
+for _ in range(t):
+    a=input()
+    if a in m:
+        print("YES")
+    else:
+        print("NO")    
+    
