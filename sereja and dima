@@ -1,0 +1,24 @@
+#hos
+n = int(input())
+a = list(map(int, input().split()))
+
+left = 0
+right = n - 1
+s= 0
+d = 0
+tu = 0  
+
+while left <= right:
+    if a[left] > a[right]:
+        c = a[left]
+        left += 1
+    else:
+        c = a[right]
+        right -= 1
+    if tu % 2 == 0:
+        s += c
+    else:
+        d += c
+    tu += 1
+
+print(s, d)
