@@ -1,0 +1,14 @@
+#hos
+t=int(input())
+numbers=['1','2','3','4','5','6','7','8','9','0']
+
+for _ in range(t):
+     b=input()
+     m=[]
+     for I in b:
+         if I in numbers:
+             m.append(int(I))
+     print(sum(m))       
+              
+         
+    
