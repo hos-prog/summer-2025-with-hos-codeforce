@@ -1,0 +1,14 @@
+#Hosama 
+n,k=map(int,input().split())
+a=list(map(int,input().split()))
+gaps=[]
+for I in range(n-1):
+    gap=a[I+1]-a[I]
+    gaps.append(gap)
+gaps.sort(reverse=True)
+top=gaps[:k-1]
+total=sum(top)
+final=a[-1]-a[0]-total
+print(final)
+        
+    
