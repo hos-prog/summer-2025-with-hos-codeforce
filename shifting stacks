@@ -1,0 +1,13 @@
+#hos
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    h = list(map(int, input().split()))
+    total = 0
+    pos = True
+    for i in range(n):
+        total += h[i]
+        if total < i * (i + 1) // 2:
+            pos= False
+            break
+    print("YES" if pos else "NO")
