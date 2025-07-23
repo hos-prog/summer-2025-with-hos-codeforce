@@ -1,0 +1,8 @@
+#hos
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    ca = list(map(int, input().split()))
+    m= min(ca)
+    total= sum(i- m for i in ca)
+    print(total)
