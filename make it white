@@ -1,0 +1,17 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=input()
+    last_b=0
+    first_b=0
+    for I in range(n):
+        if a[I]=="B":
+            first_b+=I
+            break
+    for j in range(n-1,-1,-1):
+        if a[j]=="B":
+            last_b+=j
+            break
+    print(last_b-first_b +1)               
+            
