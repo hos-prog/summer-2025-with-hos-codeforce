@@ -1,0 +1,14 @@
+t=int(input())
+for _ in range(t):
+    a = input()
+    m = set()
+    i = 0
+    while i < len(a):
+        j = i
+        while j < len(a) and a[j] == a[i]:
+            j += 1
+        count = j - i
+        if count % 2 == 1:
+            m.add(a[i])
+        i = j
+    print(''.join(sorted(m)))
