@@ -1,0 +1,9 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n,m=map(int,input().split())
+    l=[]
+    for I in range(n,m+1):
+        total=(I-n)+(m-I)
+        l.append(total)
+    print(min(l))    
