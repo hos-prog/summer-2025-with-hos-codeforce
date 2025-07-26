@@ -1,0 +1,17 @@
+#hos
+t = int(input())
+for _ in range(t):
+    s = input()
+    n = int(s)
+    found = False
+    for x in range(0, 100):  
+        if x * x == n:
+            for a in range(x + 1):
+                b = x - a
+                print(a, b)
+                found = True
+                break
+        if found:
+            break
+    if not found:
+        print(-1)
