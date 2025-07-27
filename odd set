@@ -1,0 +1,14 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    odd_num=sum(1 for x in a if x%2==1)
+    even_num=2*n-odd_num
+    if odd_num==n:
+        print("YES")
+    else:
+        print("NO")    
+           
+            
+      
