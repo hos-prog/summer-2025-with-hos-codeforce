@@ -1,0 +1,11 @@
+n, m = map(int, input().split())
+prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+
+if n in prime:
+    index_num = prime.index(n)
+    if index_num + 1 < len(prime) and prime[index_num + 1] == m:
+        print("YES")
+    else:
+        print("NO")
+else:
+    print("NO")
