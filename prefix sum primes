@@ -1,0 +1,30 @@
+def is_prime(x):
+    if x < 2:
+        return False
+    for i in range(2, int(x**0.5)+1):
+        if x % i == 0:
+            return False
+    return True
+
+n = int(input())
+a = list(map(int, input().split()))
+
+count1 = a.count(1)
+count2 = a.count(2)
+
+result = []
+
+
+if count1 >= 1 and count2 >= 1:
+    result.append(2)
+    result.append(1)
+    count2 -= 1
+    count1 -= 1
+
+
+result += [2] * count2
+
+
+result += [1] * count1
+
+print(' '.join(map(str, result)))
