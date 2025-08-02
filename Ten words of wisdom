@@ -1,0 +1,13 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    h={}
+    for i in range(n):
+        a,b=map(int,input().split())
+        if a<=10:
+            h[i+1]=b
+        else:
+            h[i+1]=0    
+    the_max=max(h,key=h.get) 
+    print(the_max)
