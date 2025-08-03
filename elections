@@ -1,0 +1,10 @@
+#hos
+t = int(input())
+for _ in range(t):
+    a, b, c = map(int, input().split())
+    max1= max(a, b, c)
+    count = (a == max1) + (b == max1) + (c == max1)
+    A = 0 if a == max1 and count ==1 else max1 - a + 1
+    B = 0 if b == max1 and count== 1 else max1 - b + 1
+    C = 0 if c == max1 and count == 1 else max1 - c + 1
+    print(A, B, C)
