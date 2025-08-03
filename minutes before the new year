@@ -1,0 +1,6 @@
+#hos
+t=int(input())
+for _ in range(t):
+    h,m=map(int,input().split())
+    minutes=(60*h)+m
+    print(1440-minutes)
