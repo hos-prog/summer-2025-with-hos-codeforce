@@ -1,0 +1,17 @@
+#hos
+t=int(input())
+for _ in range(t):
+    mihaia=0
+    bianchi=0
+    n=int(input())
+    a=list(map(int,input().split()))
+    for I in a:
+        if I%2==0:
+            mihaia+=I
+        else:
+            bianchi+=I
+    if mihaia>bianchi:
+        print("YES")
+    else:
+        print("NO")                
+    
