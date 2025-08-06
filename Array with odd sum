@@ -1,0 +1,18 @@
+#Hos
+t=int(input())
+for _ in range(t):
+    even=0
+    odd=0
+    n=int(input())
+    a=list(map(int,input().split()))
+    for I in a:
+        if I%2==0:
+            even+=I
+        else:
+            odd+=I    
+    if odd==0 and sum(a)%2==0:
+        print("NO")
+    elif  even==0 and odd%2==0:
+        print("NO")
+    else:
+        print("YES")      
