@@ -1,0 +1,28 @@
+#hos
+t=int(input())
+a=list(map(int,input().split()))
+right=0
+left=0
+tallest=0
+smallest=0
+maximum=max(a)
+minimum=min(a)
+for i in range(t):
+    if a[i]==maximum:
+        tallest+=i
+        break
+        
+    else:
+        right+=1
+        
+for j in range(t-1,-1,-1):
+    if a[j]==minimum:
+        smallest+=j
+        break
+    else:
+        left+=1
+if smallest<tallest:
+    print(left+right-1)                        
+else:
+    print(left+right)    
+         
