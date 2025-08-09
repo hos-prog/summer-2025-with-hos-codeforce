@@ -1,0 +1,12 @@
+#hos
+t=int(input())
+for _ in range(t):
+    a=input()
+    new=a[:2]
+    if len(a)>3:
+        for I in range(3,len(a),2):
+            new+=a[I]
+    print(new)        
+             
+        
+    
