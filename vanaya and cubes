@@ -1,0 +1,13 @@
+t = int(input())  
+h = 0
+u= 0
+
+while True:
+    h += 1
+    n = h * (h + 1) // 2  
+    if u + n > t:
+        h -= 1
+        break
+    u += n
+
+print(h)
