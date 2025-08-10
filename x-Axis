@@ -1,0 +1,14 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=list(map(int,input().split()))
+    list1=[]
+    a=abs(n[0]-n[0])+abs(n[1]-n[0])+abs(n[2]-n[0])
+    list1.append(a)
+    b=abs(n[0]-n[1])+abs(n[1]-n[1])+abs(n[2]-n[1])
+    list1.append(b)
+    c=abs(n[0]-n[2])+abs(n[1]-n[2])+abs(n[2]-n[2])
+    list1.append(c)
+    print(min(list1))
+        
+    
