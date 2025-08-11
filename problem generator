@@ -1,0 +1,14 @@
+t=int(input())
+for _  in range(t):
+    letters=['A','B','C','D','E','F','G']
+    n,m=map(int,input().split())
+    a=input()
+    rounds=0
+    for I in  letters:
+        if I in a and a.count(I)>=m:
+            continue
+        else:
+            rounds+=(1*m-a.count(I))
+    print(rounds)        
+                
+    
