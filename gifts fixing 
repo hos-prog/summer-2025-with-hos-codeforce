@@ -1,0 +1,15 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    MinA,MinB=min(a),min(b)
+    total=0
+    for ai,bi in zip(a,b):
+        da=ai-MinA
+        db=bi-MinB
+        total+=max(da,db)
+    print(total)    
+        
+        
