@@ -1,0 +1,13 @@
+#hos
+t=int(input())
+letters=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+for _ in range(t):
+    l=""
+    for _ in range(8):
+        a=input()
+        for I in a:
+            if I in letters:
+                l+=I
+    print(l)            
+                
+            
