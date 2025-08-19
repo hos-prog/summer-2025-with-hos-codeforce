@@ -1,0 +1,16 @@
+#hos
+t=int(input())
+for _ in range(t):
+    l=""
+    for _ in range (3):
+        a=input()
+        if a.count('A')==0:
+            l+="A"
+        elif a.count('B')==0:
+            l+="B"
+        elif a.count('C')==0:
+            l+="C"
+    print(l)   
+
+
+    
