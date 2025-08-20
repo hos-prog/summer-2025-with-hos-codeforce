@@ -1,0 +1,9 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    way=0
+    for b in range(1,n):   # <-- starts from 1 now (not 0)
+        a=n-b
+        if a>b:
+            way+=1
+    print(way)
