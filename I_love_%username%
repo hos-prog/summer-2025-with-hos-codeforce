@@ -1,0 +1,13 @@
+#hos
+t=input()
+n=list(map(int,input().split()))
+max1,min1=n[0],n[0]
+cou=0
+for i in n[1:]:
+    if i > max1:
+        max1=i
+        cou+=1
+    elif i< min1:
+        min1=i
+        cou+=1
+print(cou)
