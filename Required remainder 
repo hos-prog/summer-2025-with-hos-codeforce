@@ -1,0 +1,6 @@
+#hos
+t=int(input())
+for _ in range(t):
+    x,y,n=map(int,input().split())
+    maximum=((n-y)//x)*x+y
+    print(maximum)
