@@ -1,0 +1,12 @@
+#hos
+t=int(input())
+for _ in range (t):
+    a=input()
+    if len(a)%2==1:
+        print("NO")
+    else:
+        index=len(a)//2
+        if a[:index]==a[index:]:
+            print("YES")
+        else:
+            print("NO")   
