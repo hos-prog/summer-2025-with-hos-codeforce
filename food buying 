@@ -1,0 +1,11 @@
+#hos
+t=int(input())
+for _ in range(t):
+    s=int(input())
+    tot= 0
+    while s >= 10:
+        sp = (s // 10) * 10
+        tot+= sp
+        s = (s // 10) + (s % 10)
+    tot += s
+    print(tot)
