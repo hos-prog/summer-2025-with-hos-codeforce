@@ -1,0 +1,21 @@
+# hos
+s, n = map(int, input().split())
+x1= []
+for _ in range(n):
+    xi, yi = map(int, input().split())
+    x1.append((xi, yi))
+
+x1.sort()
+
+found = False
+for x, y in x1:
+    if x >= s:
+        found = True
+        break
+    else:
+        s += y
+
+if found:
+    print("NO")
+else:
+    print("YES")
