@@ -1,0 +1,17 @@
+#hos
+t=int(input())
+n=str(t)
+found =False
+for i in n:
+    if i !="4" and i!="1":
+        found=True
+        break
+if found:
+    print("NO")
+else:
+    if n[0]=="4":
+        print("NO")
+    elif "444" in n:
+        print("NO")
+    else:
+        print("YES")    
