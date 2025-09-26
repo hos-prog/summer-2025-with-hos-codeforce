@@ -1,0 +1,11 @@
+# Read four integers
+x = list(map(int, input().split()))
+x.sort()
+s = x[-1]        
+p, q, r = x[0], x[1], x[2]  
+
+a = s - p
+b = s - q
+c = s - r
+
+print(a, b, c)
