@@ -1,0 +1,10 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    res= 0
+    for ai, bi in zip(a, b):
+        if ai > bi:
+            res += ai - bi
+    print(res+ 1)
