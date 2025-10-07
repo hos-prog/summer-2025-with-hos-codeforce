@@ -1,0 +1,9 @@
+#hos
+import sys
+input=sys.stdin.readline
+t=int(input())
+for _ in range(t):
+    n,k=map(int,input().split())
+    t_mult=(n+k-1)//k
+    ans=(t_mult*k+n-1)//n
+    print(ans)
