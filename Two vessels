@@ -1,0 +1,12 @@
+t = int(input())
+for _ in range(t):
+    a,b,c=map(int,input().split())
+    maxu=max(a,b)
+    minu=min(a,b)
+    steps=0
+    while maxu>minu:
+        maxu-=c
+        minu+=c
+        steps+=1
+        
+    print(steps)    
