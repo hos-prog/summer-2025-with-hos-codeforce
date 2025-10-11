@@ -1,0 +1,14 @@
+#hos
+t=int(input())
+
+for _ in range(t):
+    n=int(input())
+    numbers=[]
+    for _ in range(n):
+        s=input()
+        for I in range(len(s)):
+            if s[I]=='#':
+             numbers.append(I+1)
+    var=reversed(numbers)         
+    print(*var)       
+      
