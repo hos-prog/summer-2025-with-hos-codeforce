@@ -1,0 +1,11 @@
+#hos
+t=int(input())
+s=input()
+
+dict={}
+
+for i in range(t-1):
+    sub=s[i:i+2]
+    dict[sub]=dict.get(sub,0)+1
+maximum=max(dict,key=dict.get)
+print(maximum)
