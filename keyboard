@@ -1,0 +1,13 @@
+#hos
+s=input()
+char=input()
+letters="qwertyuiopasdfghjkl;zxcvbnm,./"
+correct=""
+for i in char :
+    for j in range(30):
+        if i==letters[j] and s=="R":
+            correct+=letters[j-1]
+        elif i==letters[j]and s=="L":
+            correct+=letters[j+1]
+            
+print(correct)
