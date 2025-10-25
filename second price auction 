@@ -1,0 +1,11 @@
+#hos
+t=int(input())
+a=list(map(int,input().split()))
+maxu=max(a)
+b=a[:]
+b.remove(maxu)
+mixu=max(b)
+one=a.index(maxu)+1
+
+print(one,mixu)
+        
